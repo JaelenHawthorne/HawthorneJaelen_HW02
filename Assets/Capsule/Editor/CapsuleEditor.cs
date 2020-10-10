@@ -34,6 +34,8 @@ public class CapsuleEditor : Editor
         }
 
         GUILayout.EndHorizontal();
+
+        EditorGUILayout.HelpBox("Press the buttons to spin the object or change its size randomly", MessageType.Info);
     }
 
 

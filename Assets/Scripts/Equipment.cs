@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+
 using Random = UnityEngine.Random;
 
 public enum CurrentlyEquipped { Sword, Helmet, Boots, Chain_Mail }
@@ -31,6 +33,8 @@ public class Equipment : MonoBehaviour
 
     public float newSize = 1f;
 
+
+
     public void Spin()
     {
         float animation = baseSpeed + Mathf.Sin(Time.time * 8f) * baseSpeed / 7f;
@@ -42,6 +46,12 @@ public class Equipment : MonoBehaviour
         newSize = Random.Range(.5f, 10.0f);
         transform.localScale = Vector3.one * newSize;
     }
+
+
+
+
+
+
 }
 
 
