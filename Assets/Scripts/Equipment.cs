@@ -29,23 +29,11 @@ public class Equipment : MonoBehaviour
     public equipment[] Inventory;
 
 
-    public float baseSpeed = 3f;
-
-    public float newSize = 1f;
+  
 
 
 
-    public void Spin()
-    {
-        float animation = baseSpeed + Mathf.Sin(Time.time * 8f) * baseSpeed / 7f;
-        transform.Rotate(baseSpeed, animation, 0);
-    }
 
-    public void sizeChange()
-    {
-        newSize = Random.Range(.5f, 10.0f);
-        transform.localScale = Vector3.one * newSize;
-    }
 
 
 

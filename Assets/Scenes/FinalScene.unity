@@ -297,12 +297,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currrentlyEquipped:
-    name: 1
+    name: 15
     value: 1
+    rarity: 1
+    unit: 1
+    slot: 1
+  Inventory:
+  - name: 15/20
+    value: 0
     rarity: 0
     unit: 0
     slot: 0
-  Inventory: []
+  - name: 16/20
+    value: 0
+    rarity: 0
+    unit: 2
+    slot: 2
+  - name: 15/20
+    value: 0
+    rarity: 0
+    unit: 3
+    slot: 3
 --- !u!136 &1770762856
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -369,9 +384,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770762854}
-  m_LocalRotation: {x: -0.49243444, y: -0.30888274, z: -0.091095425, w: -0.8085799}
+  m_LocalRotation: {x: 0.13716814, y: -0.5402531, z: 0.06253107, w: 0.8278897}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.1981618, y: 3.1981618, z: 3.1981618}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -388,4 +403,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88380c253cb4e824c863e08e82a920f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseSpeed: 100
+  baseSpeed: 10
+  newSize: 3.1981618
